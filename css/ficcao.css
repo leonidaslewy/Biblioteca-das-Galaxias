@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+:root {
+    --primary-color: #101447;
+    --primary-color-border: #090b29;
+    --secondary-color: #ff8800;
+}
+
+body {
+    background-color: white;
+    margin: 0;
+}
+
+h3 {
+    text-align: center;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1vw;
+    height: 30px;
+}
+
+button {
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #00000000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1vw;
+    border-radius: 40px;
+    padding: 15px;
+    height: 30px;
+}
+
+.main-header {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    column-gap: inherit;
+    border-bottom: 7px solid var(--primary-color-border);
+    padding-top: 10px;
+}
+
+.voltar {
+    border-left: 10px solid transparent;
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
+    justify-content: center;
+    padding-top: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.catalogo a {
+    text-decoration: none;
+}
+
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 3px solid var(--secondary-color);
+    border-radius: 10px;
+    background-color: rgb(247, 237, 226);
+    padding-bottom: 3px;
+    transition: transform .3s;
+    text-decoration: none;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+.produto:active {
+    transform: translateY(20px);
+}
+
+.imagem {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;    
+    width: 14vw;
+}
